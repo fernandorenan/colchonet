@@ -16,7 +16,13 @@ module Colchonet
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config.time_zone = "Central Time (US & Canada)"
+      config.time_zone = "Brasilia"
     # config.eager_load_paths << Rails.root.join("extras")
+   
+    # The default locale is :en and all translations from    
+    # config/locales/*.rb,yml are auto loaded.
+    # config.i18n.load_path +=
+    # Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+      config.i18n.default_locale = :'pt-BR'
   end
 end
