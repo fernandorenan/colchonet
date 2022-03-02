@@ -1,12 +1,11 @@
-<h1>Colcho.net</h1>
-
-<p>
-Escolha uma das ações a seguir:
+<h1>Quartos recém postados</h1>
 
 <ul>
 
-<li><%= link_to "Cadastro", new_user_path %></li>
-<li><%= link_to "Visualizar Quartos", rooms_path %></li>
-</ul>
+<% @rooms.each do |room|%>
 
-</p>
+<li><%= link_to room.complete_name, room%></li>
+
+<%end%>
+
+</ul>
