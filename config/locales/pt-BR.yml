@@ -1,17 +1,27 @@
 pt-BR:
+  users:
+     new:
+       title: Cadastro
+     edit:
+       title: Editar Perfil
+  rooms:
+     new:
+        title: Cadastro
+  links:
+        back: Voltar
   activerecord:
     models:
-      room: Quarto
       user: Usuário
-  attributes:
+      room: Quarto
+    attributes:
       user:
-        bio: Biografia
-        email: Email
         full_name: Nome completo
         location: Localização
+        email: Email
         password: Senha
-        password_confirmation: Confirme sua senha
+        password_confirmation: Confirme sua senha    
       room:
         description: Descrição
         location: Localização
         title: Título
+        
