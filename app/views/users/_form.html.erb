@@ -1,6 +1,6 @@
 <% if @user.errors.any? %>
 <div id="error_explanation">
-<h2>Há <%= "erro".pluralize(room.errors.count)%> no formulário, por favor verifique.</h2>
+<%= t 'general.form_error' %>
 </div>
 <%end%>
 

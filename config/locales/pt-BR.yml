@@ -4,11 +4,53 @@ pt-BR:
        title: Cadastro
      edit:
        title: Editar Perfil
+     show:
+       title: "Perfil: %{user_name}"
+       edit: 'Editar perfil'
+       location: "Localização: %{location}"
+       bio: "Bio: %{bio}"
+       home: "Início"
   rooms:
      new:
         title: Cadastro
+     edit:
+        title: Editar Perfil
+        show: Mostrar
+     show:
+        title: "Quarto: %{user_name}"
+        edit: 'Editar perfil'
+        location: "Localização: %{location}"
+        description: "Descrição: %{description}"
+        back: Voltar
+     index:
+        title: Quartos
+        room: Quarto
+        location: Localização
+        description: Descrição
+        show: Mostrar
+        edit: Editar
+        destroy: Deletar
+        new: Novo Quarto
+  
+  signup_mailer:
+        confirm_email:
+            subject: 'Colcho.net - Confirme seu email'
+            title: 'Seja bem vindo ao Colcho.net!'
+            body: |
+                Seja bem vindo ao Colcho.net, %{full_name}.
+                O Colcho.net é o lugar ideal para você alugar aquele quarto
+                sobrando na sua casa e ainda conhecer gente do mundo inteiro.
+            confirm_link_html: 'Para você começar a usar o site, acesse o link: %{link}'
+            thanks_html: 'Obrigado por se cadastrar no %{link}.'
+
   links:
         back: Voltar
+  layout:
+        rooms: Quartos
+        signup: Cadastro
+  general:
+        form_error: Há erros no formulário, por favor verifique.
+
   activerecord:
     models:
       user: Usuário

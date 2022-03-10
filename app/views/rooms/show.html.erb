@@ -1,17 +1,12 @@
 <p>
-  <strong>Title:</strong>
-  <%= @room.title %>
+<%= t '.title', :user_name => @room.title %>
 </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @room.location %>
+<p><%= t '.location', :location => @room.location %>
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @room.description %>
+<p><%= t '.description', :description => @room.description %>
 </p>
 
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+<%= link_to t('.edit'), edit_room_path(@room) %> |
+<%= link_to t('.back'), rooms_path %>
